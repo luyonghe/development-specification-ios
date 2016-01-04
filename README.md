@@ -122,9 +122,9 @@ Xcode中通过设置 Xcode > Preferences > Text Editing > Show page guide，来�
 
 
 ##3.	编码风格：
-  每位开发人员都有自己的编码风格，但是很多时候，当加入一个新团队，就需要遵循特定的规范。
+  每位开发人员都有自己的编码风格，但是我们需要一个统一的编码风格，也就需要遵循特定的规范。
   
-  虽然有些人可能会拒绝遵循严格的编码指南，但是为了提高代码的可读性和降低代码维护的难度，通常还是建议开发人员遵循规范。Sun公司的“[Java编程语言编码规范：为什么要有编码规范？](https://en.wikipedia.org/wiki/Coding_conventions#Software_maintenance)”（建议大家看一下）支持遵循规范进行编码的做法，原因如下：
+  虽然有些人可能会拒绝遵循严格的编码指南，但是为了提高代码的可读性和降低代码维护的难度，建议开发人员遵循规范。Sun公司的“[Java编程语言编码规范：为什么要有编码规范？](https://en.wikipedia.org/wiki/Coding_conventions#Software_maintenance)”（建议大家看一下）支持遵循规范进行编码的做法，原因如下：
   
 •	一款软件的维护成本占软件整个生命周期总成本的40%-80%。
 
