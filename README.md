@@ -15,8 +15,7 @@ Xcode中通过设置 Xcode > Preferences > Text Editing > Show page guide，来�
 ####2.方法声明和定义
   +-方法和返回类型之间须空格，参数列表中参数可以添加空格，但这并不是必须的。
  ```java
-      -	(void)doSomethingWithString:(NSString *)theString 
-      {
+      -	(void)doSomethingWithString:(NSString *)theString {
   						...
       }
  ```
@@ -26,8 +25,7 @@ Xcode中通过设置 Xcode > Preferences > Text Editing > Show page guide，来�
  ```java
       - (void)doSomethingWith:(GTMFoo *)theFoo
                          rect:(NSRect)theRect
-                     interval:(float)theInterval
-      {
+                     interval:(float)theInterval{
                ...
       }
  ```
@@ -36,8 +34,7 @@ Xcode中通过设置 Xcode > Preferences > Text Editing > Show page guide，来�
  ```java
       - (void)short:(GTMFoo *)theFoo
     	    longKeyword:(NSRect)theRect
-    	    evenLongerKeyword:(float)theInterval
-      {
+    	    evenLongerKeyword:(float)theInterval{
   	        ...
       }
  ```
@@ -125,6 +122,22 @@ Xcode中通过设置 Xcode > Preferences > Text Editing > Show page guide，来�
 
 
 ##3.	编码风格：
+  每位开发人员都有自己的编码风格，但是很多时候，当加入一个新团队，就需要遵循特定的规范。
+  
+  虽然有些人可能会拒绝遵循严格的编码指南，但是为了提高代码的可读性和降低代码维护的难度，通常还是建议开发人员遵循规范。Sun公司的“[Java编程语言编码规范：为什么要有编码规范？](https://en.wikipedia.org/wiki/Coding_conventions#Software_maintenance)”（建议大家看一下）支持遵循规范进行编码的做法，原因如下：
+  
+•	一款软件的维护成本占软件整个生命周期总成本的40%-80%。
+
+•	几乎没有软件在整个生命周期中都是由其作者进行维护。
+
+•	编码规范提高了软件的可读性，使工程师可以更迅速、更彻底地读懂新代码。
+
+•	如果开发人员要将源代码作为产品交付，那么他需要保证，该产品跟他创造的任何一款产品相比，都进行了精心地打包，而且同样简洁…
+
+这些是其他公司的规范，可以让我们借鉴。
+
+包括[Google](http://google-styleguide.googlecode.com/svn/trunk/objcguide.xml)、[GitHub](https://github.com/github/objective-c-style-guide)、[Adium](https://trac.adium.im/wiki/CodingStyle)、[Sam Soffes](https://gist.github.com/soffes/812796)、[CocoaDevCentral](http://cocoadevcentral.com/articles/000082.php)、[Luke Redpath](http://lukeredpath.co.uk/blog/my-objective-c-style-guide.html)或者[Marcus Zarra](http://www.cimgf.com/zds-code-style-guide/)。
+
 
 
 ##4.	注释：
@@ -149,8 +162,7 @@ Xcode中通过设置 Xcode > Preferences > Text Editing > Show page guide，来�
 ```java
         // A delegate for NSApplication to handle notifications about app
         // launch and shutdown. Owned by the main app controller.
-        @interface MyAppDelegate : NSObject
-         {
+        @interface MyAppDelegate : NSObject{
          		 ...
          }
         @end
