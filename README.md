@@ -136,4 +136,4 @@ Xcode中通过设置 Xcode > Preferences > Text Editing > Show page guide，来�
 ####2.[https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
 ####3.[https://en.wikipedia.org/wiki/Acronym#Nomenclature](https://en.wikipedia.org/wiki/Acronym#Nomenclature)
 
-
+##6. 在项目结构中，不建议使用单纯的Group，直接采用文件夹的形式。
