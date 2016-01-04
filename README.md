@@ -28,7 +28,7 @@ Xcode中通过设置 Xcode > Preferences > Text Editing > Show page guide，来�
                          rect:(NSRect)theRect
                      interval:(float)theInterval
       {
-           ...
+               ...
       }
  ```
 
@@ -38,7 +38,7 @@ Xcode中通过设置 Xcode > Preferences > Text Editing > Show page guide，来�
     	    longKeyword:(NSRect)theRect
     	    evenLongerKeyword:(float)theInterval
       {
-  	    ...
+  	        ...
       }
  ```
 
@@ -94,8 +94,36 @@ Xcode中通过设置 Xcode > Preferences > Text Editing > Show page guide，来�
 
 
 ##2.	命名规范：
+
+关于多语言下编写代码时的命名说明：
+
+当编写 Objective-C++ 代码时，事情就不这么简单了。许多项目需要实现跨平台的 C++ API，并混合一些 Objective-C、Cocoa 代码，或者直接以 C++ 为后端，前端用本地 Cocoa 代码。这就导致了两种命名方式直接不统一。
+
+解决方案：编码风格取决于方法/函数以哪种语言实现。如果在一个 @implementation 语句中，就使用 Objective-C 的风格。如果实现一个 C++ 的类，就使用 C++ 的风格。这样避免了一个函数里面实例变量和局部变量命名规则混乱，严重影响可读性。
+
+关于c++和Cocoa的规范。这里说的是官方规范。
+
+
 ###（1）	命名前缀：
-每个自己定义的类名都要加上类名前缀。
+每个自己定义的类名都要加上类名前缀。为每个类都添加相同的前缀，可在不同的应用间重复使用。
+###（2）	扩展名：
+类别的文件名应该包含被扩展的类名，如Toast+UIView.h
+###（3）	类名
+类名应该首字母大写，并以驼峰格式分割单词。如：LXLightEffectHelper
+###（4）	方法名：
+方法名应该以小写字母开头，并混合驼峰格式。每个参数也应该以小写字母开头。详情参见
+  [Apple’s Guide to Naming Methods] (https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/Articles/NamingMethods.html)
+###（5）	变量名：
+变量名应该以小写字母开头，并用驼峰格式。类的成员变量以下划线作为后缀。如：myInstanceVariable_
+####1.普通变量名
+变量名称有描述性，有助于对代码的理解。
+####2.实例变量
+实例变量应该混合大小写，并以下划线作为后缀，如 usernameTextField_。然而，如果不能使用 Objective-C 2.0（操作系统版本的限制），并且使用了 KVO/KVC 绑定成员变量时，我们允许例外（KVO=Key Value Observing，KVC=Key Value Coding）。这种情况下，可以以一个下划线作为成员变量名字的前缀，这是苹果所接受的键/值命名惯例。如果可以使用 Objective-C 2.0，@property 以及 @synthesize 提供了遵从这一命名规则的解决方案。（官网翻译）
+####3.常量
+变量名（包括宏，枚举，静态局部变量等）以字母小写k开头，使用驼峰格式分割单词，如：kWritePerm
+
+
+
 ##3.	编码风格：
 
 
@@ -105,4 +133,7 @@ Xcode中通过设置 Xcode > Preferences > Text Editing > Show page guide，来�
 
 参考资料
 ####1.[http://zh-google-styleguide.readthedocs.org/en/latest/google-objc-styleguide/spacing](http://zh-google-styleguide.readthedocs.org/en/latest/google-objc-styleguide/spacing)
+####2.[https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
+####3.[https://en.wikipedia.org/wiki/Acronym#Nomenclature](https://en.wikipedia.org/wiki/Acronym#Nomenclature)
+
 
