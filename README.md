@@ -35,10 +35,10 @@ Xcode中通过设置 Xcode > Preferences > Text Editing > Show page guide，来�
 当第一个关键字比其它的短时，保证下一行至少有 4 个空格的缩进。这样可以使关键字垂直对齐，而不是使用冒号对齐：
  ```java
       - (void)short:(GTMFoo *)theFoo
-    			longKeyword:(NSRect)theRect
-    			evenLongerKeyword:(float)theInterval
-    	{
-  					...
+    	    longKeyword:(NSRect)theRect
+    	    evenLongerKeyword:(float)theInterval
+      {
+  	    ...
       }
  ```
 
@@ -55,7 +55,7 @@ Xcode中通过设置 Xcode > Preferences > Text Editing > Show page guide，来�
                       error:arg3];
  ```
 
-			不要使用下面的缩进方式，下面的方式都让你的代码的可读性降低了。
+不要使用下面的缩进方式，下面的方式都让你的代码的可读性降低了。
  ```java
         [myObject doFooWith:arg1 name:arg2  // some lines with >1 arg
                       error:arg3];
@@ -78,6 +78,7 @@ Xcode中通过设置 Xcode > Preferences > Text Editing > Show page guide，来�
 用@pubic和@private修饰时，应该以一个空格缩进。
 ###（6）异常
 每个 @ 标签应该有独立的一行，在 @ 与 {} 之间需要有一个空格， @catch 与被捕捉到的异常对象的声明之间也要有一个空格。或者在编码风格上把｛｝的前括号移植到下行。
+
 如果你决定使用 Objective-C 的异常，那么就按下面的格式。不过你最好先看看 [避免抛出异常] (http://zh-google-styleguide.readthedocs.org/en/latest/google-objc-styleguide/features/#avoid-throwing-exceptions) 了解下为什么不要使用异常。
 ```java
       @try {
