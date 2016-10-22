@@ -6,38 +6,40 @@
 缺点：当几个模块共用一些类时，不太好归类。
 
 项目目录
+
 Classes
-   └──├── Category(整个应用需要用到的分类   
-│   ├── Toast+UIView    
-│   └── UISlider+touch    
-├──Tools(用于封装第三方库或者全局通用的工具类)    
-├── Lib(第三方库)   
-│   ├── AFNetworking   
-│   └── SDWebImage   
-├── Base(用于继承公共根类)   
-│   ├── Other   
-│   └── Model
-│   └── Controller
-│   └── View
-├── Music(功能之一：音乐相关的模块)
-│   ├── LocalMusic(本地音乐)
-│   ├── CloudMusic(云音乐)）
-│      ├── XimalayaMusic(云音乐里的喜马拉雅音乐)  
-│        ├── Manager(封装喜马拉雅sdk ，用于获取和管理喜马拉雅数据)
-│        ├── Other(数据库文件、喜马拉雅模块需要用到的常量、枚举等等)
-│        ├── Controller(所有和喜马拉雅音乐相关的控制器)
-│        ├── Model(所有和喜马拉雅相关的数据模型)
-│        └── View(所有和喜马拉雅音乐界面相关的Cell 、Button、Label等UI控件)
-│         .
-│         .
+   └──├── Category(整个应用需要用到的分类     
+│   ├── Toast+UIView       
+│   └── UISlider+touch      
+├──Tools(用于封装第三方库或者全局通用的工具类)       
+├── Lib(第三方库)      
+│   ├── AFNetworking      
+│   └── SDWebImage      
+├── Base(用于继承公共根类)      
+│   ├── Other      
+│   └── Model   
+│   └── Controller   
+│   └── View      
+├── Music(功能之一：音乐相关的模块)   
+│   ├── LocalMusic(本地音乐)    
+│   ├── CloudMusic(云音乐)）   
+│      ├── XimalayaMusic(云音乐里的喜马拉雅音乐)     
+│        ├── Manager(封装喜马拉雅sdk ，用于获取和管理喜马拉雅数据)   
+│        ├── Other(数据库文件、喜马拉雅模块需要用到的常量、枚举等等)   
+│        ├── Controller(所有和喜马拉雅音乐相关的控制器)   
+│        ├── Model(所有和喜马拉雅相关的数据模型)   
+│        └── View(所有和喜马拉雅音乐界面相关的Cell 、Button、Label等UI控件)   
 │         .  
-├── ModuleH(功能H：)   
-│  
-├── Main(整个程序的主框架、页面跳转主框架)   
-│   
-├── Other(用于存放创建工程时就存在的文件，AppDelegate文件，程序入口main.m等文件)
-│
-└── Supporting Files(资源文件：plist文件、铃声、字体、内置小视频等)
+│         .   
+│         .    
+├── ModuleH(功能H：)     
+│     
+├── Main(整个程序的主框架、页面跳转主框架)      
+│      
+├── Other(用于存放创建工程时就存在的文件，AppDelegate文件，程序入口main.m等文件)  
+│    
+└── Supporting Files(资源文件：plist文件、铃声、字体、内置小视频等)    
+
 
 ## 编码规范
 苹果公司已经有了一套完整的编码规范，google也有一套属于c的一套编码规范。我结合这两套规范，总结出了这套规范，如果有错误或者不恰当之处，联系我或者拿出来讨论。
