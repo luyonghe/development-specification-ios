@@ -7,15 +7,15 @@
 
 项目目录
 Classes
-   └──├── Category(整个应用需要用到的分类
-│   ├── Toast+UIView
-│   └── UISlider+touch
-├──Tools(用于封装第三方库或者全局通用的工具类)
-├── Lib(第三方库)
-│   ├── AFNetworking
-│   └── SDWebImage
-├── Base(用于继承公共根类)
-│   ├── Other
+   └──├── Category(整个应用需要用到的分类   
+│   ├── Toast+UIView    
+│   └── UISlider+touch    
+├──Tools(用于封装第三方库或者全局通用的工具类)    
+├── Lib(第三方库)   
+│   ├── AFNetworking   
+│   └── SDWebImage   
+├── Base(用于继承公共根类)   
+│   ├── Other   
 │   └── Model
 │   └── Controller
 │   └── View
